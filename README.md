@@ -111,9 +111,7 @@ sns.boxplot(x='sepal_width',data=nor)
 ```
 <img width="658" height="538" alt="image" src="https://github.com/user-attachments/assets/5136c6aa-122b-4635-a9eb-4db83d7c18df" />
 ```
-Z-SCORE
-
-import numpy as np import pandas as pd df=pd.read_csv("heights.csv") df
+Z-SCOREimport numpy as np import pandas as pd df=pd.read_csv("heights.csv") df
 ```
 
 
