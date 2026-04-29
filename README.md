@@ -91,7 +91,7 @@ import seaborn as sns sns.boxplot(x='sepal_width',data=ir)
 ```
 <img width="615" height="530" alt="image" src="https://github.com/user-attachments/assets/b2338c7b-3584-4f89-b507-0459df217054" />
 ```
-q1=ir.sepal_width.quantile(0.25) q3=ir.sepal_width.quantile(0.75) iqr=q3-q1 print(iqr)
+#q1=ir.sepal_width.quantile(0.25) q3=ir.sepal_width.quantile(0.75) iqr=q3-q1 print(iqr)
 ```
 <img width="105" height="33" alt="image" src="https://github.com/user-attachments/assets/0a044fa2-c64c-4b6d-874c-ff95f4a6fe17" />
 ```
