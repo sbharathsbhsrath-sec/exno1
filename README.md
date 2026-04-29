@@ -98,10 +98,9 @@ import seaborn as sns sns.boxplot(x='sepal_width',data=ir)
 out=ir[((ir.sepal_width<(q1-1.5iqr))|(ir.sepal_width>(q3+1.5iqr)))] out['sepal_width']
 ```
 <img width="355" height="104" alt="image" src="https://github.com/user-attachments/assets/30ad5371-3e8b-43df-8e1e-2c99ab3ef3df" />
-```
-<img width="355" height="104" alt="image" src="https://github.com/user-attachments/assets/9eeb721c-10fe-4e8b-9ef5-fe942ddbd205" />
 
-```
+
+
 <img width="355" height="104" alt="image" src="https://github.com/user-attachments/assets/0e30ff7a-346b-4c1c-b4dc-5339c75d201b" />
 ```
 nor=ir[~((ir.sepal_width<(q1-1.5iqr))|(ir.sepal_width>(q3+1.5iqr)))] nor['sepal_width']
