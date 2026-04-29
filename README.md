@@ -116,23 +116,37 @@ Z-SCORE
 
 import numpy as np import pandas as pd df=pd.read_csv("heights.csv") df
 ```
+
+
 <img width="216" height="441" alt="image" src="https://github.com/user-attachments/assets/112d23da-0dc4-467d-9f2d-f61bd1318c3a" />
 ```
 import scipy.stats as stats q1 = df['height'].quantile(0.25) q2 = df['height'].quantile(0.5) q3 = df['height'].quantile(0.75) iqr = q3-q1 iqr
 ```
+
+
+
 <img width="207" height="48" alt="image" src="https://github.com/user-attachments/assets/bcca1a28-c7ee-4f48-a021-8d2106044623" />
 ```
 low = q1 - 1.5iqr print(low) high = q3 + 1.5iqr print(high)
 ```
+
+
+
 <img width="173" height="49" alt="image" src="https://github.com/user-attachments/assets/7061a71d-b8dc-487c-b0a0-f415d71a6c0e" />
 ```
 df1 = df[((df['height'] >=low)& (df['height'] <=high))] df1
 ```
+
+
 <img width="167" height="376" alt="image" src="https://github.com/user-attachments/assets/385774a4-ca2e-48ca-870d-32d6d413b8d3" />
 ```
 z = np.abs(stats.zscore(df['height'])) z
 ```
+
+
 <img width="331" height="300" alt="image" src="https://github.com/user-attachments/assets/2d02e371-8b2b-401f-bbf1-fb4541933e1a" />
+
+
 ```
 df1 = df[z<3] df1
 ```
